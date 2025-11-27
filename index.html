@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bebefin ❤️</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(#ffe6ea, #ffd1e3);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .card {
+      background: #fff;
+      padding: 35px;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      max-width: 380px;
+      animation: pop 0.7s ease;
+    }
+    @keyframes pop {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    h1 {
+      color: #ff4f8b;
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #555;
+      margin: 8px 0;
+    }
+    .gif {
+      width: 130px;
+      margin-bottom: 18px;
+      animation: float 2s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+    .btn {
+      margin-top: 18px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ff5c8d;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff769f;
+      transform: scale(1.05);
+    }
+    .song-btn {
+      background: #7b4bff;
+    }
+    .song-btn:hover {
+      background: #8c63ff;
+    }
+    #surprise img {
+      animation: pop 0.6s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <img class="gif" src="https://media.tenor.com/GNrBaeV8I-cAAAAi/quby-high-five.gif" alt="cute gif" />
+
+    <h1>Hi my baby Luise! 💕</h1>
+    <p>I know you're stressed right now. Take a deep breath for me, okay?</p>
+    <p>You're doing your best, and I'm so proud of you.</p>
+    <p>Every problem you're facing will be fixed and resolved someday. I love you!</p>
+    <p>You’re strong, loved, and I’ll always be here for you.</p>
+    <p>Everything will be okay. I love you endlessly. 💗</p>
+
+    <button id="giftBtn" class="btn">Click for Surprise 🎁</button>
+
+    <div id="surprise" style="display:none; margin-top:20px;">
+      <img src="https://media.tenor.com/Tb5oi-FdAg0AAAAi/fofo-cute.gif" alt="surprise" style="width:200px; border-radius:15px;" />
+      <p style="color:#ff5c8d; font-weight:bold;">mwaa for you! 💕</p>
+    </div>
+
+    <button onclick="window.open('https://open.spotify.com/track/0aJrYfARfCKzv6gXjhs4SZ?si=629ddcfe2ccf4d76','_blank')" class="btn song-btn">play this when you're sad 🎶</button>
+
+  </div>
+
+  <script>
+    document.getElementById('giftBtn').addEventListener('click', function() {
+      document.getElementById('surprise').style.display = 'block';
+      this.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
